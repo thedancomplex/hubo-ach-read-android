@@ -8,9 +8,102 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MainActivity" >
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+    <!-- 
+       <TableRow android:id="@+id/tabla_cabecera" android:layout_width="match_parent" android:layout_height="match_parent"></TableRow>
+            <TableLayout android:id="@+id/tabla_cuerpo" android:layout_height="match_parent" android:layout_width="match_parent">
+                <TableRow android:id="@+id/tableRow1" android:layout_width="match_parent" android:layout_height="wrap_content">
 
+                    <TextView android:background="@drawable/cell_shape" android:padding="5dp" android:id="@+id/textView00" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:text="@string/TextView00"></TextView>
+                    <TextView android:background="@drawable/cell_shape" android:padding="5dp" android:id="@+id/textView01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:text="@string/TextView01"></TextView>
+                    <TextView android:background="@drawable/cell_shape" android:padding="5dp" android:id="@+id/textView02" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:text="@string/TextView02"></TextView>
+
+                </TableRow>
+                <TableRow android:id="@+id/tableRow2" android:layout_width="match_parent" android:layout_height="wrap_content">                    
+
+                    <TextView android:background="@drawable/cell_shape" android:padding="5dp" android:id="@+id/textView10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:text="@string/TextView10"></TextView>
+                    <TextView android:background="@drawable/cell_shape" android:padding="5dp" android:id="@+id/textView11" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:text="@string/TextView11"></TextView>
+                    <TextView android:background="@drawable/cell_shape" android:padding="5dp" android:id="@+id/textView12" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:text="@string/TextView12"></TextView></TableRow>
+
+                <TableRow android:id="@+id/tableRow3" android:layout_width="match_parent" android:layout_height="wrap_content">                    
+
+                    <TextView android:background="@drawable/cell_shape" android:padding="5dp" android:id="@+id/textView20" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:text="@string/TextView20"></TextView>
+                    <TextView android:background="@drawable/cell_shape" android:padding="5dp" android:id="@+id/textView21" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:text="@string/TextView21"></TextView>
+                    <TextView android:background="@drawable/cell_shape" android:padding="5dp" android:id="@+id/textView22" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:text="@string/TextView22"></TextView>
+
+                </TableRow>
+                <TableRow android:id="@+id/tableRow4" android:layout_width="match_parent" android:layout_height="wrap_content">                    
+
+                    <TextView android:background="@drawable/cell_shape" android:padding="5dp" android:id="@+id/textView30" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:text="@string/TextView30"></TextView>
+                    <TextView android:background="@drawable/cell_shape" android:padding="5dp" android:id="@+id/textView31" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:text="@string/TextView31"></TextView>
+                    <TextView android:background="@drawable/cell_shape" android:padding="5dp" android:id="@+id/textView32" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:text="@string/TextView32"></TextView>
+
+                </TableRow>
+            </TableLayout>
+            -->
+            
+            
+<TableLayout 
+         android:id = "@+id/RHE"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:padding="5dp">
+
+     <TableRow android:layout_height="wrap_content">
+         <TextView
+             android:id="@+id/runLabel"
+             android:text="@string/tmp"
+             android:layout_height="wrap_content"
+             />
+         <TextView
+             android:id="@+id/hitLabel"
+             android:text="@string/tmp"
+             android:layout_height="wrap_content"
+             />
+         <TextView
+             android:id="@+id/errorLabel"
+             android:text="@string/tmp"
+             android:layout_height="wrap_content"
+             />
+     </TableRow>
+
+     <TableRow android:layout_height="wrap_content">
+         <TextView
+             android:id="@+id/visitorRuns"
+             android:text="@string/tmp"
+             android:layout_height="wrap_content"
+             />
+         <TextView
+             android:id="@+id/visitorHits"
+             android:text="@string/tmp"
+             android:layout_height="wrap_content"
+             />
+         <TextView
+             android:id="@+id/visitorErrors"
+             android:text="@string/tmp"
+             android:layout_height="wrap_content"
+             />
+     </TableRow>
+
+     <TableRow android:layout_height="wrap_content">
+         <TextView
+             android:id="@+id/homeRuns"
+             android:text="@string/tmp"
+             android:layout_height="wrap_content"
+             />
+         <TextView
+             android:id="@+id/homeHits"
+             android:text="@string/tmp"
+             android:layout_height="wrap_content"
+             />
+         <TextView
+             android:id="@+id/homeErrors"
+             android:text="@string/tmp"
+             android:layout_height="wrap_content"
+             />
+     </TableRow>
+</TableLayout>
+       
+    
+    
+    
 </RelativeLayout>
