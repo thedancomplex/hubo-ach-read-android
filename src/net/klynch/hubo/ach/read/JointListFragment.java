@@ -4,9 +4,9 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.support.v4.app.ListFragment;
 import android.view.View;
-import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+import net.klynch.hubo.ach.read.joints.JointAdapter;
 import net.klynch.hubo.ach.read.joints.JointContent;
 
 /**
@@ -67,9 +67,7 @@ public class JointListFragment extends ListFragment {
         super.onCreate(savedInstanceState);
 
         // TODO: replace with a real list adapter.
-        setListAdapter(new ArrayAdapter<JointContent.Joint>(getActivity(),
-                R.layout.list_item_joint, R.id.name,
-                JointContent.JOINTS));
+        setListAdapter(new JointAdapter(getActivity()));
     }
 
     @Override
