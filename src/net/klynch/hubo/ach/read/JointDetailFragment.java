@@ -7,7 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import net.klynch.hubo.ach.read.dummy.JointContent;
+import net.klynch.hubo.ach.read.joints.JointContent;
 
 /**
  * A fragment representing a single Joint detail screen. This fragment is either contained in a

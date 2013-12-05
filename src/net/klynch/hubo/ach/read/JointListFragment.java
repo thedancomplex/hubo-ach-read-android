@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-import net.klynch.hubo.ach.read.dummy.JointContent;
+import net.klynch.hubo.ach.read.joints.JointContent;
 
 /**
  * A list fragment representing a list of Joints. This fragment also supports tablet devices by
