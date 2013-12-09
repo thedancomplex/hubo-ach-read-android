@@ -19,7 +19,7 @@
             android:layout_weight="1"
             android:ellipsize="marquee"
             android:singleLine="true"
-            android:text="cmd"
+            android:text="@string/cmd"
             android:textSize="12sp" />
 
         <TextView
@@ -29,7 +29,7 @@
             android:layout_weight="1"
             android:ellipsize="marquee"
             android:singleLine="true"
-            android:text="ref"
+            android:text="@string/ref"
             android:textSize="12sp" />
 
         <TextView
@@ -39,7 +39,7 @@
             android:layout_weight="1"
             android:ellipsize="marquee"
             android:singleLine="true"
-            android:text="enc"
+            android:text="@string/enc"
             android:textSize="12sp" />
 
         <TextView
@@ -49,7 +49,7 @@
             android:layout_weight="1"
             android:ellipsize="marquee"
             android:singleLine="true"
-            android:text="cur"
+            android:text="@string/cur"
             android:textSize="12sp" />
 
         <TextView
@@ -59,7 +59,7 @@
             android:layout_weight="1"
             android:ellipsize="marquee"
             android:singleLine="true"
-            android:text="tmp"
+            android:text="@string/tmp"
             android:textSize="12sp" />
     </LinearLayout>
 
@@ -72,7 +72,7 @@
         android:layout_alignParentTop="true"
         android:layout_alignWithParentIfMissing="true"
         android:gravity="center_vertical"
-        android:text="Example application"
+        android:text="@string/title_joint_list"
         android:textSize="16sp" />
 
 </RelativeLayout>
