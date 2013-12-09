@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/headers"
+    android:layout_width="fill_parent"
+    android:layout_height="26dip"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentRight="true"
+    tools:context=".JointListActivity" >
+
+    <TextView
+        android:id="@+id/cmd"
+        android:layout_width="wrap_content"
+        android:layout_height="26dip"
+        android:layout_weight="1"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:text="@string/cmd"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/ref"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:text="@string/ref"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/enc"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:text="@string/enc"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/cur"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:text="@string/cur"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tmp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:text="@string/tmp"
+        android:textSize="12sp" />
+
+</LinearLayout>

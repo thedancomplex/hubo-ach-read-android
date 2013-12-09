@@ -3,7 +3,9 @@ package net.klynch.hubo.ach.read;
 import android.app.Activity;
 import android.os.Bundle;
 import android.support.v4.app.ListFragment;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.ListView;
 
 import net.klynch.hubo.ach.read.joints.JointAdapter;
@@ -34,6 +36,8 @@ public class JointListFragment extends ListFragment {
      */
     private int mActivatedPosition = ListView.INVALID_POSITION;
 
+    private View mHeaderView;
+
     /**
      * A callback interface that all activities containing this fragment must implement. This
      * mechanism allows activities to be notified of item selections.
@@ -63,10 +67,20 @@ public class JointListFragment extends ListFragment {
     }
 
     @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        final View root = super.onCreateView(inflater, container, savedInstanceState);
+        mHeaderView = inflater.inflate(R.layout.list_item_joint_header, container);
+        return root;
+    }
 
-        // TODO: replace with a real list adapter.
+    @Override
+    public void onActivityCreated(Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+
+        if (mHeaderView != null) {
+            getListView().addHeaderView(mHeaderView);
+        }
+
         setListAdapter(new JointAdapter(getActivity()));
     }
 
